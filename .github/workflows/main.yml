@@ -24,7 +24,7 @@ jobs:
         
     - name: Generate Version
       id: version
-      run: echo "::set-output name=VERSION::$(date -u + "%Y%m%d%H%M")"    
+      run: echo "::set-output name=VERSION::$(date -u +"%Y%m%d%H%M")    
 
     - name: Build, test, tag, and push application image to Amazon ECR
       env:
